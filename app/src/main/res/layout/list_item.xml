@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photoRealtor"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/nameRealtor"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/phoneRealtor"
+                android:textSize="9sp"
+                android:layout_below="@+id/nameRealtor"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/emailRealtor"
+                android:textSize="9sp"
+                android:layout_below="@+id/phoneRealtor"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/dateRealtor"
+                android:textSize="9sp"
+                android:layout_below="@+id/emailRealtor"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:showText="true"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:id="@+id/isWorkWithRealtor"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="50dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/customdrawablecheckbox"
+                android:text=""
+                android:id="@+id/sendMailToRealtor"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical|right" />
+        </FrameLayout>
+
+</LinearLayout>
