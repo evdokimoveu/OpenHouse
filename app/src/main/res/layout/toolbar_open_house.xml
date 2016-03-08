@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:clickable="true"
+                android:src="@drawable/funnel"
+                android:contentDescription="@string/abc_capital_on"
+                android:onClick="showDatePickerDialog"
+                android:background="@null"
+                android:layout_marginRight="10dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendEmailId"
+                android:layout_gravity="center|left"
+                android:clickable="true"
+                android:onClick="sendEmailClick"
+                android:src="@drawable/mail"
+                android:contentDescription="@string/email"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:singleLine="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addRealtorId"
+            android:clickable="true"
+            android:layout_gravity="center|right"
+            android:onClick="addRealtorClick"
+            android:src="@drawable/add_realtor"
+            android:contentDescription="@string/name"
+            android:background="@null"
+            android:layout_marginRight="5dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OpenHouse</string>
+    <string name="app_label">Open House</string>
+    <string name="add_realtor_name">Welcome</string>
+    <string name="send_mail_name">Send Mail</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="switchQuestion">Are you working with realtor:</string>
+    <string name="saveButton">Save</string>
+    <string name="titleFormSendMail">From Messages</string>
+    <string name="themeMail">Theme</string>
+    <string name="textMessage">Text message</string>
+    <string name="sendButton">Send</string>
+    <string name="backButton">Back</string>
+    <string name="title_activity_welcome">Welcome</string>
+</resources>
