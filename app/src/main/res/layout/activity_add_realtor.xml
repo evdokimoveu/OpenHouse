@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.evdokimoveu.openhouse.AddRealtor"
+    android:background="@color/colorBackgroundActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorToolbar"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="16dp"
+        android:paddingRight="25dp"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nameEdit"
+            android:layout_marginTop="-10dp"
+            android:layout_below="@+id/nameText"
+            android:layout_alignLeft="@+id/emailEdit"
+            android:layout_alignStart="@+id/emailEdit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/phoneEdit"
+            android:layout_marginTop="-10dp"
+            android:layout_below="@+id/phoneText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailEdit"
+            android:ems="10"
+            android:layout_below="@+id/emailText"
+            android:layout_marginTop="-10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/app_label"
+            android:id="@+id/OpenHouseText"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/name"
+            android:id="@+id/nameText"
+            android:singleLine="true"
+            android:layout_below="@id/OpenHouseText"
+            android:paddingLeft="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/phone"
+            android:id="@+id/phoneText"
+            android:singleLine="true"
+            android:layout_below="@+id/nameEdit"
+            android:paddingLeft="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/email"
+            android:id="@+id/emailText"
+            android:layout_below="@+id/phoneEdit"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:paddingLeft="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/switchQuestion"
+            android:id="@+id/switchQuestion"
+            android:layout_alignBottom="@+id/switchQ"
+            android:layout_alignLeft="@+id/emailEdit"
+            android:layout_alignStart="@+id/emailEdit" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="No"
+            android:textOn="Yes"
+            app:showText="true"
+            android:checked="true"
+            android:id="@+id/switchQ"
+            android:layout_below="@+id/emailEdit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:textSize="10sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:id="@+id/saveButton"
+            android:onClick="saveRealtor"
+            android:layout_alignLeft="@+id/switchQuestion"
+            android:layout_alignStart="@+id/switchQuestion"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorButton"
+            android:layout_below="@id/switchQ" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add_realtor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp" />
+
+</RelativeLayout>
