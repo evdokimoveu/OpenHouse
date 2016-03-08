@@ -26,7 +26,6 @@ public class AdapterItem extends BaseAdapter {
     private SQLiteDatabase sqLiteDatabase;
     private DBRealtors dbRealtors;
 
-
     public AdapterItem(List<Realtor> items, Context context) {
         this.realtors = items;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
